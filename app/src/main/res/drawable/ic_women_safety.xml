@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Shield background, representing safety and security. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2L4,5v6c0,5.55 3.84,10.74 8,12 4.16,-1.26 8,-6.45 8,-12V5L12,2z" />
+
+    <!-- A heart inside the shield, symbolizing care and life. -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M12,17.27L10.74,16.14C7.81,13.43 6,11.53 6,9.27C6,7.57 7.42,6.15 9.12,6.15C10.02,6.15 10.9,6.59 11.5,7.31L12,7.81L12.5,7.31C13.1,6.59 13.98,6.15 14.88,6.15C16.58,6.15 18,7.57 18,9.27C18,11.53 16.19,13.43 13.26,16.14L12,17.27z"/>
+</vector>
