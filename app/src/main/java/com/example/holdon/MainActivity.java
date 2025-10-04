@@ -51,3 +51,32 @@ public class MainActivity extends AppCompatActivity {
             }, 1000);
         }
     }
+
+    private boolean hasAllPermissions() {
+        return ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void requestAllPermissions() {
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.SEND_SMS,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.CALL_PHONE},
+                PERMISSION_REQUEST_CODE);
+    }
+
+    // Handle runtime permissions
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == PERMISSION_REQUEST_CODE) {
+            if (hasAllPermissions()) {
+                SOSHelper.triggerSOS(this);
+            } else {
+                Toast.makeText(this, "Permissions required for SOS!", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+}
