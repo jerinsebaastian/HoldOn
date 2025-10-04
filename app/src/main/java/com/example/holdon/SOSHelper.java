@@ -92,11 +92,6 @@ public class SOSHelper {
             callIntent.setData(Uri.parse("tel:112"));
             callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(callIntent);
-        } else {
-            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
-            dialIntent.setData(Uri.parse("tel:112"));
-            dialIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(dialIntent);
         }
     }
 }
