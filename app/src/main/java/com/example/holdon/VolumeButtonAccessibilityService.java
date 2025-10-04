@@ -39,7 +39,10 @@ public class VolumeButtonAccessibilityService extends AccessibilityService {
         // Nothing needed
     }
 
-
+    @Override
+    public void onAccessibilityEvent(AccessibilityEvent event) {
+        // Must be implemented but not used here
+    }
 
     @Override
     protected void onServiceConnected() {
