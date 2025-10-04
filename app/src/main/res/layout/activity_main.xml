@@ -1,103 +1,55 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center_horizontal"
-    android:background="#000000"
-    tools:context=".MainActivity">
+    android:background="#0D0D0D">
 
-    <!-- App Title -->
-    <TextView
-        android:id="@+id/appTitle"
+    <!-- HoldOn Name -->
+
+   <TextView
+        android:id="@+id/textView"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="677dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="HoldOn"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Small Settings Button at Top Right -->
+
+    <ImageButton
+        android:id="@+id/settingsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HoldOn: Women Safety"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#D81B60"
-        android:layout_marginBottom="20dp" />
+        android:src="@android:drawable/ic_menu_manage"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:contentDescription="Settings"/>
 
-    <!-- Decorative Icon (you can use your own drawable) -->
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/ic_women_safety"
-        android:contentDescription="Women Safety Icon"
-        android:layout_marginBottom="20dp"/>
+    <!-- Big SOS Button at Bottom Center -->
 
-    <!-- Contact 1 -->
-    <EditText
-        android:id="@+id/contact1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Emergency Contact 1"
-        android:inputType="phone"
-        android:padding="12dp"
-        android:textColor="#000000"
-        android:background="@drawable/rounded_edittext"
-        android:layout_marginBottom="10dp" />
-
-    <!-- Contact 2 -->
-    <EditText
-        android:id="@+id/contact2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Emergency Contact 2"
-        android:inputType="phone"
-        android:padding="12dp"
-        android:textColor="#000000"
-        android:background="@drawable/rounded_edittext"
-        android:layout_marginBottom="10dp" />
-
-    <!-- Contact 3 -->
-    <EditText
-        android:id="@+id/contact3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Emergency Contact 3"
-        android:inputType="phone"
-        android:padding="12dp"
-        android:textColor="#000000"
-        android:background="@drawable/rounded_edittext"
-        android:layout_marginBottom="10dp" />
-
-    <!-- Custom Message -->
-    <EditText
-        android:id="@+id/message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Custom SOS Message"
-        android:inputType="textMultiLine"
-        android:minLines="3"
-        android:padding="12dp"
-        android:textColor="#050505"
-        android:background="@drawable/rounded_edittext"
-        android:layout_marginBottom="20dp" />
-
-    <!-- Save Button -->
     <Button
-        android:id="@+id/saveBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save Emergency Details"
-        android:textAllCaps="false"
-        android:textSize="16sp"
+        android:id="@+id/sosBtn"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#E60505"
+        android:text="SOS"
         android:textColor="#FFFFFF"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/rounded_button"/>
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
-    <!-- Send Test SOS -->
-    <Button
-        android:id="@+id/sendBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:text="Send Test SOS"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
-
-</LinearLayout>
+</RelativeLayout>

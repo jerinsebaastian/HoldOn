@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HoldOn</string>
+    <string name="sos_service_description">HoldOn SOS: Trigger SOS by pressing volume button 5 times</string>
 </resources>

@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#0D0D0D">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts and Messages"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#E60505"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Contact 1 -->
+        <EditText
+            android:id="@+id/contact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 1"
+            android:autofillHints="Type Your Contact 1 Phone Number Here"
+            android:inputType="phone"
+            android:textColorHint="#898585" />
+
+
+        <EditText
+            android:id="@+id/message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:hint="Message for Contact 1"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:textColorHint="#898585" />
+        <!-- Contact 2 -->
+        <EditText
+            android:id="@+id/contact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 2"
+            android:autofillHints="Type Your Contact 2 Phone Number Here"
+            android:inputType="phone"
+            android:textColorHint="#898585"/>
+
+        <EditText
+            android:id="@+id/message2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message for Contact 2"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginBottom="50dp"
+            android:textColorHint="#898585"/>
+
+        <!-- Contact 3 -->
+        <EditText
+            android:id="@+id/contact3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 3"
+            android:autofillHints="Type Your Contact 3 Phone Number Here"
+            android:inputType="phone"
+            android:textColorHint="#898585"/>
+
+        <EditText
+            android:id="@+id/message3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message for Contact 3"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginBottom="50dp"
+            android:textColorHint="#898585"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Details"
+            android:backgroundTint="#E60505"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+</ScrollView>
